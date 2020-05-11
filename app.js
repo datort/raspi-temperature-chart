@@ -7,7 +7,7 @@ google.charts.setOnLoadCallback(initialize);
 function initialize() {
   var queryString = encodeURIComponent('select B, C, D limit 400 label C "°C", D "%RH"');
   var query = new google.visualization.Query(
-    'https://docs.google.com/spreadsheets/d/1kiI686Rr_pjYtplmdAw8_KKoxr8iVitv0kwQynRuvnw/gviz/tq?sheet=Sheet1&headers=0&tq=' + queryString);
+    'https://docs.google.com/---your-google-sheet---/gviz/tq?sheet=Sheet1&headers=0&tq=' + queryString);
   query.send(handleSampleDataQueryResponse);
 }
 
